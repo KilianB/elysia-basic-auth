@@ -28,7 +28,7 @@ export type BasicAuthOptions = {
   skipCorsPreflight: boolean
 }
 
-class BasicAuthError extends Error {
+export class BasicAuthError extends Error {
   public code = 'BASIC_AUTH_ERROR'
 
   constructor(

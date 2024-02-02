@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'bun:test'
-import { basicAuth } from './index'
 import { Elysia } from 'elysia'
+import { basicAuth } from './index'
 
 export const req = (path: string, requestInit?: RequestInit) =>
   new Request(`http://localhost${path}`, requestInit)

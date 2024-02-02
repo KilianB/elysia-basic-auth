@@ -1,7 +1,7 @@
 import { timingSafeEqual } from 'crypto';
 import Elysia from 'elysia';
 import * as fs from 'fs';
-class BasicAuthError extends Error {
+export class BasicAuthError extends Error {
     constructor(message, realm) {
         super(message);
         this.message = message;
