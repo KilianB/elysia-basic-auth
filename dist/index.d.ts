@@ -18,7 +18,7 @@ export type BasicAuthOptions = {
     scope: string | string[] | ((ctx: PreContext) => boolean);
     skipCorsPreflight: boolean;
 };
-declare class BasicAuthError extends Error {
+export declare class BasicAuthError extends Error {
     readonly message: string;
     readonly realm: string;
     code: string;
@@ -38,4 +38,3 @@ export declare function basicAuth(userOptions?: Partial<BasicAuthOptions>): Elys
         readonly BASIC_AUTH_ERROR: BasicAuthError;
     };
 }, {}, {}, {}, false>;
-export {};
